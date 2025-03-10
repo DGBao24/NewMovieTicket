@@ -79,7 +79,7 @@ public class AvatarController extends HttpServlet {
                         request.getRequestDispatcher("ChangeAvatar.jsp").forward(request, response);
                         return;
                     }
-
+                    
                     // Đổi tên file để tránh trùng lặp
                     String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString();
                     String extension = fileName.substring(fileName.lastIndexOf("."));
